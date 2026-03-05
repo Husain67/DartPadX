@@ -1,0 +1,35 @@
+name: dart_mini_ide
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  dart_style: ^2.3.6
+  file_picker: ^8.1.2
+  flutter:
+    sdk: flutter
+  flutter_code_editor: ^0.3.2
+  flutter_highlight: ^0.7.0
+  flutter_markdown: ^0.7.4
+  flutter_riverpod: ^2.5.1
+  fluttertoast: ^8.2.8
+  highlight: ^0.7.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  http: ^1.2.2
+  path_provider: ^2.1.4
+  share_plus: ^10.0.0
+  shared_preferences: ^2.3.0
+  url_launcher: ^6.3.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
