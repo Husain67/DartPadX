@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
+import 'core/theme.dart';
+import 'models/code_file.dart';
+import 'models/compiler_preset.dart';
+import 'screens/main_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Hive
+  await Hive.initFlutter();
+
+  // Register manual adapters
+  Hive.registerAdapter(CodeFileAdapter());
+  Hive.registerAdapter(CompilerPresetAdapter());
+
+  runApp(
+    const ProviderScope(
+      child: DartMiniIDEApp(),
+    ),
+  );
+}
+
+class DartMiniIDEApp extends StatelessWidget {
+  const DartMiniIDEApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'DartMini IDE',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.darkTheme,
+      home: const MainScreen(),
+    );
+  }
+}

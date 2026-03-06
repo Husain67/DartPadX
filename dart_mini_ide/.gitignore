@@ -1,0 +1,84 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Generated files
+*.g.dart
+
+# Mac/Windows/Linux builds
+/build/
+/ios/.symlinks/
+/ios/Pods/
+/ios/Runner.xcworkspace/
+/macos/Flutter/ephemeral/
+/macos/Pods/
+/macos/Runner.xcworkspace/
+/windows/flutter/ephemeral/
+/linux/flutter/ephemeral/
+.metadata
+
+# Exclude typical build outputs
+**/build/
+**/ios/Pods/
+**/ios/.symlinks/
+**/macos/Pods/
+**/macos/Flutter/ephemeral/
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+**/.dart_tool/
+**/.idea/
+**/.metadata
+**/ios/Runner.xcworkspace/
+**/macos/Runner.xcworkspace/
+**/web/
+**/*.iml
+**/android/app/src/main/res/
+**/android/gradle/
+**/android/gradlew
+**/android/gradlew.bat
+**/ios/Runner/
+**/macos/Runner/
+**/windows/runner/
+**/linux/runner/
