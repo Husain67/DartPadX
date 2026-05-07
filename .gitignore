@@ -27,3 +27,15 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+.dart_tool/
+.idea/
+.vscode/
+build/
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+*.iml
