@@ -1,0 +1,80 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'preset_model.dart';
+
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
+
+class PresetModelAdapter extends TypeAdapter<PresetModel> {
+  @override
+  final int typeId = 1;
+
+  @override
+  PresetModel read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return PresetModel(
+      id: fields[0] as String,
+      name: fields[1] as String,
+      endpoint: fields[2] as String,
+      method: fields[3] as String,
+      authType: fields[4] as String,
+      authValue: fields[5] as String,
+      headers: (fields[6] as Map).cast<String, String>(),
+      queryParams: (fields[7] as Map).cast<String, String>(),
+      bodyTemplate: fields[8] as String,
+      responseStdoutPath: fields[9] as String,
+      responseStderrPath: fields[10] as String,
+      responseErrorPath: fields[11] as String,
+      responseTimePath: fields[12] as String,
+      responseMemoryPath: fields[13] as String,
+    );
+  }
+
+  @override
+  void write(BinaryWriter writer, PresetModel obj) {
+    writer
+      ..writeByte(14)
+      ..writeByte(0)
+      ..write(obj.id)
+      ..writeByte(1)
+      ..write(obj.name)
+      ..writeByte(2)
+      ..write(obj.endpoint)
+      ..writeByte(3)
+      ..write(obj.method)
+      ..writeByte(4)
+      ..write(obj.authType)
+      ..writeByte(5)
+      ..write(obj.authValue)
+      ..writeByte(6)
+      ..write(obj.headers)
+      ..writeByte(7)
+      ..write(obj.queryParams)
+      ..writeByte(8)
+      ..write(obj.bodyTemplate)
+      ..writeByte(9)
+      ..write(obj.responseStdoutPath)
+      ..writeByte(10)
+      ..write(obj.responseStderrPath)
+      ..writeByte(11)
+      ..write(obj.responseErrorPath)
+      ..writeByte(12)
+      ..write(obj.responseTimePath)
+      ..writeByte(13)
+      ..write(obj.responseMemoryPath);
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is PresetModelAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}
