@@ -1,0 +1,32 @@
+import yaml
+import sys
+
+pubspec_path = "dartmini_ide/pubspec.yaml"
+
+with open(pubspec_path, "r") as f:
+    pubspec = yaml.safe_load(f)
+
+# dependencies
+dependencies = {
+    "flutter": {"sdk": "flutter"},
+    "flutter_code_editor": "^0.3.5",
+    "flutter_highlight": "^0.7.0",
+    "riverpod": "^2.5.1",
+    "flutter_riverpod": "^2.5.1",
+    "hive": "^2.2.3",
+    "hive_flutter": "^1.1.0",
+    "http": "^1.2.2",
+    "shared_preferences": "^2.3.0",
+    "fluttertoast": "^8.2.8",
+    "path_provider": "^2.1.4",
+    "url_launcher": "^6.3.0",
+    "share_plus": "^10.0.0",
+    "file_picker": "^8.1.2",
+    "flutter_markdown": "^0.7.4",
+    "uuid": "^4.4.0",
+}
+
+pubspec["dependencies"] = dependencies
+
+with open(pubspec_path, "w") as f:
+    yaml.dump(pubspec, f, sort_keys=False)
