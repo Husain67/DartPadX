@@ -27,3 +27,13 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+node_modules/
+__pycache__/
+target/
+coverage/
+*.iml
+.DS_Store
+.dart_tool/
+build/
+.idea/
+.vscode/
