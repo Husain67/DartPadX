@@ -1,0 +1,7 @@
+1. We need to create a complete, production-ready, mobile-first Flutter app called DartMini IDE (beta).
+2. It uses `riverpod`, `hive`, `flutter_code_editor`, `http`, and more.
+3. Dark theme (#050505 to #1a1a1a gradient), Material 3, Primary accent #FACC15.
+4. Main Screen: Top AppBar with Run button, Toolbar below it, full-screen Editor, bottom Output sheet.
+5. Setup file models and Riverpod state.
+6. Setup Custom Compiler API configurations.
+7. Setup IDE UI.
