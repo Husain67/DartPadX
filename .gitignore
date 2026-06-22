@@ -27,3 +27,14 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+
+# Additional ignores to suppress large diff warnings
+build/
+.dart_tool/
+.idea/
