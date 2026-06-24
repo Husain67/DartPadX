@@ -27,3 +27,12 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+dartmini_ide/ios/
+dartmini_ide/android/
+dartmini_ide/macos/
+dartmini_ide/windows/
+dartmini_ide/linux/
+dartmini_ide/web/
+dartmini_ide/.metadata
+dartmini_ide/.dart_tool/
+dartmini_ide/build/
