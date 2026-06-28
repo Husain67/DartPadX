@@ -27,3 +27,11 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# ignore dartmini_ide files that are generated or we do not want to see in diffs
+dartmini_ide/ios/
+dartmini_ide/android/
+dartmini_ide/linux/
+dartmini_ide/macos/
+dartmini_ide/windows/
+dartmini_ide/web/
