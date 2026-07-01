@@ -27,3 +27,23 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# Dependencies
+.dart_tool/
+.packages
+
+# Build outputs
+build/
+android/app/build/
+ios/build/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Runner/Pods/
+
+# web
+.vscode/
+
+# IntelliJ
+*.iml
+.idea/
