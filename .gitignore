@@ -27,3 +27,13 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+dart_mini_ide/build/
+dart_mini_ide/.dart_tool/
+dart_mini_ide/.pub-cache/
+dart_mini_ide/.pub/
+dart_mini_ide/ios/
+dart_mini_ide/android/
+dart_mini_ide/web/
+dart_mini_ide/macos/
+dart_mini_ide/windows/
+dart_mini_ide/linux/
